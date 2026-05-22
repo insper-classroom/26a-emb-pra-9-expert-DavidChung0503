@@ -130,6 +130,7 @@ static void gesture_recognize_task(void *p)
             break;
         }
 
+        ei_printf("Timing: DSP %d ms, inference %d ms, anomaly %d ms\n",
             result.timing.dsp,
             result.timing.classification,
             result.timing.anomaly);
